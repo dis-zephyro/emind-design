@@ -2,6 +2,7 @@
 
 @import "mixing.less";
 
+
 /* Base styles
    ========================= */
 
@@ -46,6 +47,7 @@ body {
 	height: 800px;
 
 	.top {
+		z-index: 10;
 		height: 150px;
 		padding: 13px 0;
 
@@ -78,6 +80,8 @@ body {
 	}
 
 	.header-content {
+		z-index: 10;
+		position: relative;
 		margin-bottom: 120px;
 
 		.left-col {
@@ -117,6 +121,36 @@ body {
 			}
 		}
 	}
+
+	#header-layer01 {
+		left: 0;
+		z-index: 1;
+		top: 350px;
+		width: 206px;
+		height: 150px;
+		position: absolute;
+		background: url("../img/img-pen.png") 0 0 no-repeat;
+	}
+
+	#header-layer02 {
+		left: -50px;
+		z-index: 1;
+		top: 320px;
+		width: 133px;
+		height: 238px;
+		position: absolute;
+		background: url("../img/img-cube01.png") 0 0 no-repeat;
+	}
+
+	#header-layer03 {
+		left: 150px;
+		z-index: 1;
+		top: 85px;
+		width: 223px;
+		height: 388px;
+		position: absolute;
+		background: url("../img/img-cube03.png") 0 0 no-repeat;
+	}
 }
 
 
@@ -144,14 +178,14 @@ body {
 
 			&.item2 {
 				z-index: 10;
-				top: 75px;
+				top: 3px;
 				left: 35px;
 				width: 1130px;
 			}
 
 			&.item3 {
 				z-index: 5;
-				top: 130px;
+				top: 3px;
 				left: 80px;
 				width: 1041px;
 			}
@@ -413,6 +447,9 @@ body {
 			}
 		}
 	}
+
+
+
 }
 
 
@@ -465,6 +502,8 @@ body {
 	background: url("../img/b06_bg.jpg") top center no-repeat;
 
 	.service {
+		z-index: 10;
+		position: relative;
 		margin-top: -62px;
 		margin-bottom: 60px;
 
@@ -556,6 +595,7 @@ body {
 	}
 
 	h2 {
+		z-index: 10;
 		margin-bottom: 60px;
 
 		&:before {
@@ -564,6 +604,7 @@ body {
 	}
 
 	.step {
+		z-index: 10;
 		width: 650px;
 		padding-left: 15px;
 		position: relative;
@@ -641,6 +682,46 @@ body {
 			}
 		}
 	}
+
+	#mouse {
+		top: 160px;
+		right: 0;
+		z-index: 1;
+		width: 162px;
+		height: 75px;
+		position: absolute;
+		background: url("../img/img-mouse.png") 0 0 no-repeat;
+	}
+
+	#glasses {
+		top: 790px;
+		right: 105px;
+		z-index: 1;
+		width: 285px;
+		height: 151px;
+		position: absolute;
+		background: url("../img/img-glasses.png") 0 0 no-repeat;
+	}
+
+	#tab {
+		top: 292px;
+		right: 30px;
+		z-index: 1;
+		width: 378px;
+		height: 269px;
+		position: absolute;
+		background: url("../img/img-tab.png") 0 0 no-repeat;
+	}
+
+	#img-cube-05 {
+		top: 263px;
+		right: 110px;
+		z-index: 1;
+		width: 259px;
+		height: 437px;
+		position: absolute;
+		background: url("../img/img-cube-05.png") 0 0 no-repeat;
+	}
 }
 
 
@@ -676,6 +757,7 @@ body {
    ========================= */
 
 .form-dark {
+	z-index: 10;
 	width: 100%;
 	height: 315px;
 	margin: 0 auto;
@@ -767,6 +849,12 @@ body {
 }
 
 
+.help-block {
+	display: none;
+	visibility: hidden;
+}
+
+
 /* Typography
    ========================= */
 
@@ -828,7 +916,9 @@ strong {
 	text-align: center;
 }
 
-/* ---------------- */
+
+
+/* ------------------------- */
 
 
 /*! Gray v1.4.2 (https://github.com/karlhorky/gray) | MIT */
@@ -884,4 +974,63 @@ strong {
 .grayscale.grayscale-replaced.grayscale-off > svg,
 .grayscale.grayscale-replaced.grayscale-fade:hover > svg {
 	opacity: 0;
+}
+
+
+
+/*!
+ * Hover.css (http://ianlunn.github.io/Hover/)
+ * Version: 2.0.2
+ * Author: Ian Lunn @IanLunn
+ * Author URL: http://ianlunn.co.uk/
+ * Github: https://github.com/IanLunn/Hover
+
+ * Made available under a MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+
+ * Hover.css Copyright Ian Lunn 2014. Generated with LESS.
+ */
+/* 2D TRANSITIONS */
+/* Buzz */
+@-webkit-keyframes hvr-buzz {
+	50% {
+		-webkit-transform: translateX(3px) rotate(2deg);
+		transform: translateX(3px) rotate(2deg);
+	}
+	100% {
+		-webkit-transform: translateX(-3px) rotate(-2deg);
+		transform: translateX(-3px) rotate(-2deg);
+	}
+}
+@keyframes hvr-buzz {
+	50% {
+		-webkit-transform: translateX(3px) rotate(2deg);
+		transform: translateX(3px) rotate(2deg);
+	}
+	100% {
+		-webkit-transform: translateX(-3px) rotate(-2deg);
+		transform: translateX(-3px) rotate(-2deg);
+	}
+}
+.hvr-buzz {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+}
+.hvr-buzz:hover,
+.hvr-buzz:focus,
+.hvr-buzz:active {
+	-webkit-animation-name: hvr-buzz;
+	animation-name: hvr-buzz;
+	-webkit-animation-duration: 0.15s;
+	animation-duration: 0.15s;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
 }

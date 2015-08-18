@@ -14,7 +14,8 @@
     padding-bottom: 40px;
   }
   .header .top {
-    padding: 10px 0 ;
+    height: auto;
+    padding: 10px 0;
     margin-bottom: 10px;
   }
   .header .top .header-logo {
