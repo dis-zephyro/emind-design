@@ -12,10 +12,11 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="js/vendor/jquery.fancybox/jquery.fancybox.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/mobile.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     
-    <body>
+    <body id="top">
         <header class="header">
             <div class="container">
                 <div class="top clearfix">
@@ -50,12 +51,12 @@
                         <div class="form-text">И менеджер свяжется с вами в близжайшее время.</div>
                         <div class="row clearfix">
                             <div class="col">
-                                <div class="forn-group">
+                                <div class="form-group">
                                     <input type="text" name="name" class="form-name form-control" placeholder="Ваше имя" data-validation="required" data-validation-error-msg="необходимо заполнить">
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="forn-group">
+                                <div class="form-group">
                                     <input type="text" name="phone" class="form-phone form-control" placeholder="Ваш телефон" data-validation="required" data-validation-error-msg="необходимо заполнить">
                                 </div>
                             </div>
@@ -125,16 +126,133 @@
                     Следующим этапом идет получение первого макета дизайна, при его получении вам необходимо оценить качество и идейное оформление. Не пытайтесь показать макет 10 людям, у каждого свое мнение.
                     Вам же важно принять макет самим, ведь в первую очередь он отвечает именно вашим приоритетам.
                 </div>
+                <div class="cover-inner">
+                    <div class="cover-top hidden-xs"></div>
+                    <a href="#" class="cover-doc hidden-xs"></a>
+                    <div class="cover">
+                        <div class="cover-title"><strong>нажмите</strong> для того, чтобы скачать бриф</div>
+                        <a href="#" class="cover-download"></a>
+                        <span class="cover-or">-или-</span>
+                        <div class="cover-form">
+                            <div class="cover-form-title">заполните заявку</div>
+                            <p>для консультации со специалистом</p>
+                            <form class="form">
+                                <div class="form-group">
+                                    <input type="text" name="name" class="form-name cover-form-control" placeholder="Ваше имя" data-validation="required" data-validation-error-msg="необходимо заполнить">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="phone" class="form-phone cover-form-control" placeholder="Ваш телефон" data-validation="required" data-validation-error-msg="необходимо заполнить">
+                                </div>
+                                <button type="submit" class="btn-cover">ОТПРАВИТЬ</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section class="block05">
             <div class="container">
+                <h2><strong>ПОСМОТРИТЕ</strong>, <span>ЧТО МЫ ДЕЛАЕМ</span></h2>
+            </div>
+            <ul class="work clearfix">
+                <li class="grayscale grayscale-fade">
+                    <a href="#">
+                        <div class="text-item">
+                            <span><p>Личный стилист и консультант по подбору одежды</p></span>
+                        </div>
+                        <img class="img-responsive" src="images/work01.jpg" alt="">
+                    </a>
+                </li>
+                <li class="grayscale grayscale-fade">
+                    <a href="#">
+                        <div class="text-item">
+                            <span><p>Специалисты по продажам под любой вид деятельности</p></span>
+                        </div>
+                        <img class="img-responsive" src="images/work02.jpg" alt="">
+                    </a>
+                </li>
+                <li class="grayscale grayscale-fade">
+                    <a href="#">
+                        <div class="text-item">
+                            <span><p>Детское развлекательное оборудование от производителя!</p></span>
+                        </div>
+                        <img class="img-responsive" src="images/work03.jpg" alt="">
+                    </a>
+                </li>
+                <li class="grayscale grayscale-fade">
+                    <a href="#">
+                        <div class="text-item">
+                            <span><p>Ателье «Натали»</p></span>
+                        </div>
+                        <img class="img-responsive" src="images/work04.jpg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="block06">
+            <div class="container">
+                <ul class="service clearfix hidden-xs">
+                    <li class="item1">
+                        <div class="service-title">Мы также можем продолжить <strong>развивать</strong> ваш бизнес!</div>
+                        <p>наша компания занимается продвижением, контекстной рекламой и многим другим, что поможет вам в дальнейшей работе.</p>
+                        <div class="text-right">
+                            <a href="#">узнать больше</a>
+                        </div>
+                    </li>
+                    <li class="item2">
+                        <div class="service-title"><strong>Разработка и оформление</strong><br/>информационного наполнения</div>
+                        <p>Создание максимально интересного контента<br/>– это наша задача, и мы предлагаем индивидуальные<br/>решениятолько для вас!</p>
+                        <div class="text-right">
+                            <a href="#">узнать больше</a>
+                        </div>
+                    </li>
+                </ul>
+                <h2>КАК МЫ РАБОТАЕМ?</h2>
+                <ul class="step">
+                    <li class="item1 clearfix">
+                        <div class="item-title">1. Заявка</div>
+                        <p>Вы оставляете заявку на консультацию. Мы перезваниваем для консультации, уточняем вопросы стоимости, согласовываем сроки и согласовываем дальнейшую работу.</p>
+                    </li>
+                    <li class="item2 clearfix">
+                        <div class="item-title">2. Разработка</div>
+                        <p>Как только проработано ТЗ на дизайн, сделан прототип страницы. Встает вопрос о наличии логотипа или фирменного стиля в целом, а возможно существование брэндбука. Наличие правил стилевого оформления и логотипа дает массу преимуществ при работе, ведь конечная работа будет полностью коррелироваться с вашим стилем, а также будет узнаваема.</p>
+                    </li>
+                    <li class="item3 clearfix">
+                        <div class="item-title">3. Принятие макета</div>
+                        <p>Следующим этапом идет получение первого макета дизайна, при его получении вам необходимо оценить качество и идейное оформление.
+                            Готовый и утвержденный макет передается в верстку.</p>
+                    </li>
+                </ul>
             </div>
         </section>
 
         <footer class="footer">
-
+            <div class="container">
+                <div class="form-dark clearfix">
+                    <form class="form">
+                        <div class="form-title">оставить заявку,</div>
+                        <div class="form-text">И менеджер свяжется с вами в близжайшее время.</div>
+                        <div class="row clearfix">
+                            <div class="col">
+                                <div class="form-group">
+                                    <input type="text" name="name" class="form-name form-control" placeholder="Ваше имя" data-validation="required" data-validation-error-msg="необходимо заполнить">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <input type="text" name="phone" class="form-phone form-control" placeholder="Ваш телефон" data-validation="required" data-validation-error-msg="необходимо заполнить">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn">заказать консультацию</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <a href="#top" class="go-top hidden-xs"></a>
         </footer>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
