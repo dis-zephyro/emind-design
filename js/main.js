@@ -1,0 +1,3 @@
+$.validate({
+    form : '.form'
+});
