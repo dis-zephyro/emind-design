@@ -137,3 +137,4 @@ function do_parallax(mouse_x, mouse_y) {
     elem.style.top=shift2+'px';
 
 }
+
