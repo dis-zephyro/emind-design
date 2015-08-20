@@ -25,6 +25,7 @@
 #     Header set Access-Control-Allow-Origin "*"
 # </IfModule>
 
+
 # ----------------------------------------------------------------------
 # | Cross-origin images                                                |
 # ----------------------------------------------------------------------
@@ -264,6 +265,8 @@ Options -MultiViews
     AddType text/x-component                            htc
 
 </IfModule>
+
+
 
 # ----------------------------------------------------------------------
 # | Character encodings                                                |
