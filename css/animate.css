@@ -2,17 +2,6 @@
 
 @media (min-width: 1220px) {
 
-	.animated.cover-animate {
-		animation-name: cover;
-		animation-duration: 5s;
-		animation-timing-function: ease;
-		animation-iteration-count: 1;
-		animation-direction: normal;
-		animation-delay: 0;
-		animation-play-state: running;
-		animation-fill-mode: forwards;
-	}
-
 	.portfolio.animated .item2 {
 		animation-name: p-item2;
 		animation-duration: 5s;
@@ -38,21 +27,6 @@
 
 
 
-
-
-
-@keyframes cover {
-
-	0% {
-		top: -15px;
-		left: 30px;
-	}
-
-	100% {
-		top: 300px;
-		left: 30px;
-	}
-}
 
 @keyframes p-item2 {
 

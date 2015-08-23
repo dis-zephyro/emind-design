@@ -136,3 +136,23 @@ function do_parallax(mouse_x, mouse_y) {
 
 }
 
+
+
+$(function(){
+    var elementTop=Number($("#sendBox").offset().top);//где находится элемент
+    $(document).scroll(function(){
+        var scrollTop = window.pageYOffset ? window.pageYOffset : (document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop);
+        scrollTop=Number(scrollTop)+50;//насколько прокрутили
+        riz=scrollTop-elementTop;
+        if (scrollTop>elementTop){
+            if (riz<270){
+                $("#sendBox").css('top',riz+'px');
+            } else {
+                $("#sendBox").css('top','270px');
+            }
+            //$(".cover-inner").css('margin-top',(390-riz)+'px');
+        } else {
+            $("#sendBox").css('top','0px');
+        }
+    });
+});
